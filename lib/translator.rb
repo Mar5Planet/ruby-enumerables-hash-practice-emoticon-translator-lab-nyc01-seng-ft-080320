@@ -33,7 +33,8 @@ end
   
 def get_english_meaning(file_path = './lib/emoticons.yml', japanese_emoticon)
   result = load_library(file_path)
-  
+  return_value = result.keys.find do |key|
+    result[key][:japanese] == japanese_emoticon
   if 
   else
     "Sorry, that emoticon was not found"
