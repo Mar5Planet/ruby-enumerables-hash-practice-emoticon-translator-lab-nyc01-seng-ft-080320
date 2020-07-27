@@ -38,7 +38,7 @@ def get_english_meaning(file_path = './lib/emoticons.yml', japanese_emoticon)
   end
   
   if return_value
-    result[return_value][:english]
+    result[return_value]
   else
     "Sorry, that emoticon was not found"
   end
